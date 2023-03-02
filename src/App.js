@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header } from "./feature/Header";
+import { Footer } from "./feature/Footer";
+import { Products } from "./pages/Products";
 
-function App() {
+import "./App.scss";
+import { Menu } from "./feature/Menu";
+import { Route, Routes } from "react-router-dom";
+import { Cart } from "./pages/Cart";
+import { ProductDetails } from "./pages/ProductDetails";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { Login } from "./pages/Login";
+import { Register } from "./pages/Register";
+import { Profile } from "./pages/Profile/Profile";
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <div className="app__container">
+        <Routes>
+          <Route path="/" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/productDetails" element={<ProductDetails />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
-}
-
-export default App;
+};
