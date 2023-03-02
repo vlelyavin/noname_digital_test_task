@@ -2,16 +2,13 @@ import { Header } from "./feature/Header";
 import { Footer } from "./feature/Footer";
 import { Products } from "./pages/Products";
 
-import "./App.scss";
-import { Menu } from "./feature/Menu";
 import { Route, Routes } from "react-router-dom";
 import { Cart } from "./pages/Cart";
 import { ProductDetails } from "./pages/ProductDetails";
-import { useEffect } from "react";
-import { useSelector } from "react-redux";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
-import { Profile } from "./pages/Profile/Profile";
+import { Profile } from "./pages/Profile";
+import "./App.scss";
 
 export const App = () => {
   return (

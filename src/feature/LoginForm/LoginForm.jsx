@@ -1,6 +1,5 @@
 import { Form } from "../../components/Form/Form";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import "./LoginForm.scss";
 import { useDispatch } from "react-redux";
 import { setUser } from "../../actions/actions";
 import { useNavigate } from "react-router-dom";

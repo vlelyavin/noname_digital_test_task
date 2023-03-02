@@ -3,7 +3,6 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setUser } from "../../actions/actions";
-import "./RegisterForm.scss";
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
