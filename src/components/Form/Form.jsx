@@ -15,6 +15,7 @@ export const Form = ({ title, handleClick }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  // authenticates user using google popup window
   const handleGoogleSignIn = () => {
     const provider = new GoogleAuthProvider();
     const auth = getAuth();
