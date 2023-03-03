@@ -10,7 +10,7 @@ export const RegisterForm = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // creates a new account using passed data
+  // creates a new account using passed data and adds data to the collection
   const handleRegister = (email, password) => {
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)

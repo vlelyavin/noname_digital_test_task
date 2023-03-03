@@ -1,7 +1,6 @@
 import { Header } from "./feature/Header";
 import { Footer } from "./feature/Footer";
 import { Products } from "./pages/Products";
-
 import { Route, Routes } from "react-router-dom";
 import { Cart } from "./pages/Cart";
 import { ProductDetails } from "./pages/ProductDetails";

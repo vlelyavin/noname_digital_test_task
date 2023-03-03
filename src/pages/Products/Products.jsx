@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setFilteredProducts } from "../../actions/actions";
 import { Menu } from "../../feature/Menu";
