@@ -8,6 +8,8 @@ export const LoginForm = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  // asynchronously signs user in using email and password from input,
+  // dispatches user data to the store and redirects to the main page
   const handleLogin = (email, password) => {
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)

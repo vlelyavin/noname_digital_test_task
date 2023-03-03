@@ -6,11 +6,12 @@ import "./Cart.scss";
 export const Cart = () => {
   const cart = useSelector((state) => state.cart);
   let totalSum = 0;
-
+  // calculates total price
   for (let i = 0; i < cart.length; i++) {
     totalSum += +cart[i].price;
   }
-
+  // if cart has at least one product, shows the list of these products, total price and quantity,
+  // else shows a message that your cart is empty
   return (
     <div className="cart">
       {cart.length > 0 ? (

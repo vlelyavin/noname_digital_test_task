@@ -13,6 +13,7 @@ export const Profile = () => {
     dispatch(logout());
     navigate("/");
   };
+  // if user is signed in, shows detailed info, if not, redirects to login page
   return user.id ? (
     <div className="profile">
       <div className="profile__email">Email : {user.email}</div>

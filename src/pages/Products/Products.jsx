@@ -8,11 +8,13 @@ export const Products = () => {
   const products = useSelector((state) => state.products);
   const [filteredProducts, setFilteredProducts] = useState(products);
 
+  // depending on the category, creates a new array of filtered products
   const filterCategory = (category) => {
     const result = products.filter((product) => product.category === category);
     setFilteredProducts(result);
   };
 
+  // depending on the price filter, creates a new array of products sorted by price
   const filterByPrice = (type) => {
     let result;
     if (type === "ascending") {

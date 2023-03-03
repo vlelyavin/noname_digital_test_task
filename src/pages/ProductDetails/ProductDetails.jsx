@@ -10,6 +10,7 @@ export const ProductDetails = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  // if user is not signed in, redirect to login page, else add product to the cart
   const handleClick = (selectedProduct) => {
     if (user.id) {
       dispatch(addToCart(selectedProduct));
