@@ -6,4 +6,4 @@ export const SET_SELECTED_PRODUCT = "SET_SELECTED_PRODUCT";
 export const DELETE_CART_ITEM = "DELETE_CART_ITEM";
 export const SET_USER = "SET_USER";
 export const LOGOUT = "LOGOUT";
-export const CLEAR_CART = "CLEAR_CART";
+export const SET_FITLERED_PRODUCTS = "SET_FITLERED_PRODUCTS";

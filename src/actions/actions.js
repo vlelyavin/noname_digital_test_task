@@ -7,6 +7,7 @@ import {
   DELETE_CART_ITEM,
   SET_USER,
   LOGOUT,
+  SET_FITLERED_PRODUCTS,
 } from "../constants/actionTypes";
 
 export const setProducts = (products) => ({
@@ -46,4 +47,9 @@ export const setUser = (user) => ({
 
 export const logout = () => ({
   type: LOGOUT,
+});
+
+export const setFilteredProducts = (products) => ({
+  type: SET_FITLERED_PRODUCTS,
+  payload: products,
 });

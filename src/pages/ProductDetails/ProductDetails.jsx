@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../../actions/actions";
+import { addToCart, setSelectedProduct } from "../../actions/actions";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../../components/Button";
 import "./ProductDetails.scss";
@@ -14,6 +14,8 @@ export const ProductDetails = () => {
   const handleClick = (selectedProduct) => {
     if (user.id) {
       dispatch(addToCart(selectedProduct));
+      dispatch(setSelectedProduct({}));
+
       navigate("/");
     } else {
       if (window.confirm("To buy the product you need to login")) {

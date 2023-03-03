@@ -24,7 +24,7 @@ export const Form = ({ title, handleClick }) => {
         const data = {
           email: user.email,
           id: user.uid,
-          token: user.accessTokedn,
+          token: user.accessToken,
         };
         dispatch(setUser(data));
         await setDoc(doc(db, "users", user.uid), data);
